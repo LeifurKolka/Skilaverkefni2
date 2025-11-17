@@ -22,5 +22,5 @@ function calculate(operator) {
             break;
     }
 
-    document.ElementById("result").innerText = "Niðurstaða: " + result;
+    document.getElementById("result").innerText = "Niðurstaða: " + result;
 }

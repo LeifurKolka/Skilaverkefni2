@@ -3,27 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skilaverkefni 2</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <section class="calculator">
-      <h1>Reiknivél</h1>
-      <div class="inputs">
-        <input type="number" class="num1" />
-        <input type="number" class="num2" />
-      </div>
-      <div class="buttons">
-        <button onclick="calculate('+')">(+)</button>
-        <button onclick="calculate('-')">(-)</button>
-        <button onclick="calculate('*')">(x)</button>
-        <button onclick="calculate('/')">(/)</button>
-      </div>
-      <div class="results">
-        <h2 id="result">Niðurstaða: </h2>
-      </div>
-    </section>
+    <div class="calculator">
+      <input type="text" readonly class="display" />
+      <div class="keys">
+        <button onclick="clearAll()" class="clear">AC</button>
+        <button onclick="deleteLast()" class="del">DEL</button>
+        <button onclick="selectOperator('%')" class="operator">%</button>
+        <button onclick="selectOperator('/')" class="operator">/</button>
 
-    <script src="script.js"></script>
+        <button onclick="selectNumber('7')" class="operator">7</button>
+        <button onclick="selectNumber('8')" class="operator">8</button>
+        <button onclick="selectNumber('9')" class="operator">9</button>
+        <button onclick="selectOperator('*')" class="operator">x</button>
+
+        <button onclick="selectNumber('4')" class="operator">4</button>
+        <button onclick="selectNumber('5')" class="operator">5</button>
+        <button onclick="selectNumber('6')" class="operator">6</button>
+        <button onclick="selectOperator('-')" class="operator">-</button>
+
+        <button onclick="selectNumber('1')" class="operator">1</button>
+        <button onclick="selectNumber('2')" class="operator">2</button>
+        <button onclick="selectNumber('3')" class="operator">3</button>
+        <button onclick="selectOperator('+')" class="operator">+</button>
+
+        <button onclick="selectNumber('.')" class="operator">.</button>
+        <button onclick="selectNumber('0')" class="operator">0</button>
+        <button onclick="selectNumber('00')" class="operator">00</button>
+        <button onclick="calculateNumbers()" class="operator">=</button>
+      </div>
+    </div>
+    <script src="/index.js"></script>
   </body>
 </html>

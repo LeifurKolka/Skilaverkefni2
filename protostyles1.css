@@ -1,0 +1,47 @@
+.calculator {
+    background-color: rgb(49, 46, 46);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+}
+
+.num1 {
+    background-color: lightgrey;
+}
+
+.num2 {
+    background-color: lightgrey;
+}
+
+input {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+.buttons {
+    margin: 15px 0;
+}
+
+button {
+     width: 50px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    background: #501c55;
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
